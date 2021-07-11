@@ -13,6 +13,8 @@
 
 # I also appropriately labeled the data set with descriptive variable names, and combined the Test and Training data frames into one dataframe (Data) with the measurements and activities
 
+#I downloaded the writexl package and saved my df as an excel file, in addition to text
+
 
 > library(tidyr)
 > library(dplyr)
@@ -136,3 +138,11 @@
 > Y_Mean_SD <- rbind(YMean, Y_SD)
 > Subject <- rbind(SubjectMean, Subject_SD)
 > Data <- rbind(AccelX_Mean_SD, AccelY_Mean_SD, AccelZ_Mean_SD, GyroX_Mean_SD, GyroY_Mean_SD,  GyroZ_Mean_SD, TotalAccX_Mean_SD, TotalAccY_Mean_SD, TotalACCZ_Mean_SD)
+package ‘writexl’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\CA\AppData\Local\Temp\RtmpmizxZQ\downloaded_packages
+> installed.packages(writexl)
+> install.packages("writexl")
+> library(writexl)
+> write_xlsx(Data,"C:\\Users\\CA\\Documents\\DATA.xlsx")
