@@ -68,4 +68,3 @@ R script called run_analysis.R
 > names(Data6)[3] <- "SD"
 > installed.packages(writexl)
 > write_xlsx(Data6,"C:\\Users\\CA\\Documents\\Data6.xlsx")
-
